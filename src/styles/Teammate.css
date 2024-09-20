@@ -1,0 +1,69 @@
+.text-grid {
+    display: flex;
+    justify-content: center; /* Center items in larger view */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 80px; /* Space between items */
+  }
+  
+  .text-item {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .header-item-teammate {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 54px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+    color: #ffffff;
+  }
+  
+  .image-grid-teammate {
+    display: flex;
+    justify-content: center; /* Center items in larger view */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 140px; /* Space between items */
+    margin-left: 60px;
+  }
+  
+  .image-item-teammate {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin-bottom: 50px;
+  }
+  
+  .image-item-teammate img {
+    background-color: cadetblue;
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 250px; /* Optional: rounded corners */
+  }
+  
+  @media (max-width: 768px) {
+    .image-grid-teammate {
+      display: flex;
+      justify-content: center; /* Center items in larger view */
+      margin-left: 0px;
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center items horizontally */
+      gap: 0px; /* Adjust space between items */
+    }
+  
+    .image-item-teammate {
+      margin-bottom: 0px; /* Space between stacked items */
+      width: 100%; /* Full width for better centering */
+      max-width: 300px; /* Limit the width for larger screens */
+      display: flex; /* Ensure the flex behavior remains */
+      justify-content: center;
+      text-align: center; /* Center items in the item */
+    }
+    .header-item-teammate {
+      font-size: 26px;
+    }
+  }
+  
+  

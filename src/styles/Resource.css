@@ -1,0 +1,64 @@
+.text-grid {
+    display: flex;
+    justify-content: center; /* Center items in larger view */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 80px; /* Space between items */
+  }
+  
+  .text-item {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .header-item-resource {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 54px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .image-grid-resource {
+    display: flex;
+    justify-content: center; /* Center items in larger view */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 140px; /* Space between items */
+    margin-left: 60px;
+  }
+  
+  .image-item-resource {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+  }
+  
+  .image-item-resource img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0px; /* Optional: rounded corners */
+  }
+  
+  @media (max-width: 768px) {
+    .image-grid-resource {
+      display: flex;
+      justify-content: center; /* Center items in larger view */
+      margin-left: 0px;
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center items horizontally */
+      gap: 0px; /* Adjust space between items */
+    }
+  
+    .image-item-resource {
+      margin-bottom: 0px; /* Space between stacked items */
+      width: 100%; /* Full width for better centering */
+      max-width: 300px; /* Limit the width for larger screens */
+      display: flex; /* Ensure the flex behavior remains */
+      justify-content: center;
+      text-align: center; /* Center items in the item */
+    }
+    .header-item-resource {
+      font-size: 26px;
+    }
+  }
+  

@@ -1,0 +1,107 @@
+
+
+.containerEntryPage{
+/*  
+     background-image: url("../icons/image1.jpeg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 85% 100%;
+     background-position: center; */
+     display: block;
+     justify-content: center;
+     align-items: center;
+     background-color: #ffb923;
+     
+}
+
+.imageContainer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+ 
+    
+}
+
+.navBar{
+    background: #f0eeee02;
+    
+}
+.image1{
+    height: 45vw;
+    width: auto;
+}
+/* .alestaLogo{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left: 36%;
+
+    
+} */
+.alestaLogo{
+  
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top:55%;
+    left: 36%;
+
+    
+}
+
+.welcome_text{
+    position: absolute;
+    font-family: "Clear Sans";
+    font-size: xx-large;
+    width: 100%;
+    color: black;
+    top:80%;
+    left: 46%;
+    font-weight: bold;
+    padding-left: .4rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .welcome_text{
+        padding-left:.5rem;
+        font-size: 1.5rem;
+        left: 44%;
+    }
+    
+  }
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  
+    .welcome_text{
+        padding-left: .3rem;
+        padding-right: .5rem;
+        font-size: 1.3rem;
+        left: 44%;
+    }
+      
+    
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .welcome_text{
+        padding-left: .3rem;
+        font-size: .9rem;
+        left: 44%;
+    }
+    
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .welcome_text{
+
+        font-size: .6rem;
+        left: 44%;
+    }
+    
+  }
